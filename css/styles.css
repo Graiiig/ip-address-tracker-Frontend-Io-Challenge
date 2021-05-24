@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+body{
+    margin: 0;
+    height: 100vh;
+    font-family: "Rubik";
+}
+
+.header {
+    background-image: url('../images/pattern-bg.png');
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    margin-top: 0;
+    color: white;
+    text-align: center;
+    padding-top: 1.5vw;
+    font-weight: 500;
+}
+
+.input{
+    height: 30px;
+    display: flex;
+}
+
+input{
+    border-radius:  10px 0px 0px 10px;
+    width: 450px;
+    height: 40px;
+    font-family: "Rubik";
+    padding-left: 10px;
+    cursor: pointer;
+    border-width:0px;
+    border:none;
+}
+
+.submit-ip{
+    background-color: black;
+    border-radius:  0px 10px 10px 0px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    width: 43px;
+    color: blanchedalmond;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.submit-ip:hover{
+    background-color: rgba(0, 0, 0, 0.575);
+}
+
+#mapid { 
+    height: 450px; 
+}
+
+.info{
+    border-radius: 10px;
+    display: flex;
+    background-color: white;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: -495px;
+    z-index: 500;
+    height: 90px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow:  0px 5px 50px 0px rgba(0, 0, 0, 0.438);
+}
+
+.info-block{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+}
+
+.info>span{
+    align-self: center;
+}
+
+span.title{
+    font-size: 10px;
+    font-weight: 500;
+    color: hsl(0, 0%, 59%)
+}
+
+span.description{
+    font-weight: 500;
+}
+
+.divider{
+    align-self: center;
+    height: 60px;
+    width: 1px;
+    opacity: 0.2;
+    background-color: hsl(0, 0%, 59%);
+}
+
+/* Media queries smartphones */
+@media (max-width: 375px) { 
+    
+    h1{
+        font-size: 6vw;
+    }
+
+    .input{
+        width: 90%;
+    }
+
+    .info{
+        padding: 1vw;
+        flex-direction: column;
+        height: min-content;
+        margin-top: -530px;
+    }
+
+    .info>.divider{
+        display: none;
+    }
+
+    .info>div{
+        margin-top: 3vw;
+    }
+    .leaflet-left{
+        display: none;
+    }
+}
