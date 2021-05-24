@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![image](https://user-images.githubusercontent.com/15630543/119407267-4a4c1e80-bce4-11eb-82e4-5cfbbee8a54a.png)
+![image](https://user-images.githubusercontent.com/15630543/119407667-d8280980-bce4-11eb-8a09-ce7cbe05e38f.png)
 ### Links
 
 - Solution URL: [Community proposals](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0/hub/ipaddresstrackerfrontendiochallenge-6SR7-b13m/solutions)
