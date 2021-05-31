@@ -4,10 +4,10 @@
 fetch('https://ipapi.co/json')
     .then(response => response.json())
     .then(function (infos) {
-        document.querySelector('.ip').innerHTML = infos.query
+        document.querySelector('.ip').innerHTML = infos.ip
         document.querySelector('.location').innerHTML = infos.city + ", " + infos.country
         document.querySelector('.timezone').innerHTML = infos.timezone
-        document.querySelector('.isp').innerHTML = infos.isp
+        document.querySelector('.isp').innerHTML = infos.org
         createMap(infos.lat, infos.lon);
     })
 
@@ -23,10 +23,10 @@ buttonInput.addEventListener('click', function () {
                 if (infos.code == 422) {
                     alert('IP Not Valid !');
                 } else {
-                    document.querySelector('.ip').innerHTML = infos.query
+                    document.querySelector('.ip').innerHTML = infos.ip
                     document.querySelector('.location').innerHTML = infos.city + ", " + infos.region + ", " + infos.country
                     document.querySelector('.timezone').innerHTML = infos.timezone
-                    document.querySelector('.isp').innerHTML = infos.isp
+                    document.querySelector('.isp').innerHTML = infos.org
                     moveMap(infos.lat, infos.lon);
                 }
             })
