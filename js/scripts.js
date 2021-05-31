@@ -1,7 +1,7 @@
 // *** ressource : https://stackoverflow.com/questions/391979/how-to-get-clients-ip-address-using-javascript
 
 // *** Get informations on load
-fetch('http://ip-api.com/json=?')
+fetch('http://ip-api.com/json', {mode: 'cors'})
     .then(response => response.json())
     .then(function (infos) {
         document.querySelector('.ip').innerHTML = infos.query
